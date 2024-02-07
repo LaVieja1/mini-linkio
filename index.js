@@ -27,6 +27,7 @@ app.use(express.urlencoded({ extended: false }));
 
 // VIEW ENGINE
 app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
 
 //ROUTE MIDDLEWARE
 app.use("/url", urlRoute);
