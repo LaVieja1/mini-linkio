@@ -4,3 +4,5 @@
 - Express
 - MongoDB
 - Nanoid
+- EJS
+- Bootstrap
