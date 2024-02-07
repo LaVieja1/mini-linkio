@@ -36,4 +36,18 @@ async function handleGetNewShortURL(req, res) {
   return res.redirect(entry.redirectURL);
 }
 
-module.exports = { handleGenerateNewShortURL, handleGetNewShortURL };
+async function handleGetAnalytics(req, res) {
+  const shortId = req.params.shortId;
+  const result = await URL.findOne({ shortId });
+
+  return res.json({
+    totlaClicks: result.visitHistory.length,
+    analytics: result.visitHistory,
+  });
+}
+
+module.exports = {
+  handleGenerateNewShortURL,
+  handleGetNewShortURL,
+  handleGetAnalytics,
+};
