@@ -12,8 +12,8 @@ dependencies:
     specifier: ^8.1.1
     version: 8.1.1
   nanoid:
-    specifier: ^5.0.5
-    version: 5.0.5
+    specifier: 3.0.0
+    version: 3.0.0
 
 devDependencies:
   dotenv:
@@ -568,10 +568,8 @@ packages:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
     dev: false
 
-  /nanoid@5.0.5:
-    resolution: {integrity: sha512-/Veqm+QKsyMY3kqi4faWplnY1u+VuKO3dD2binyPIybP31DRO29bPF+1mszgLnrR2KqSLceFLBNw0zmvDzN1QQ==}
-    engines: {node: ^18 || >=20}
-    hasBin: true
+  /nanoid@3.0.0:
+    resolution: {integrity: sha512-5lU+F2QpTW1JLwlXxnu2/jkpTipIuYZL3Za6TQzM16HYDzZQqlthbXYSW0H2KzZu1UQPGHDPbCl1TS3xOKfqEQ==}
     dev: false
 
   /negotiator@0.6.3:
