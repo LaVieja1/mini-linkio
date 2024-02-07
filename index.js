@@ -19,6 +19,7 @@ const indexRoute = require("./routes/index");
 
 //MIDDLEWARE
 app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 // VIEW ENGINE
 app.set("view engine", "ejs");
