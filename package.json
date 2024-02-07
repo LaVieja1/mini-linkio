@@ -10,11 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
     "dotenv": "^16.4.1",
-=======
     "ejs": "^3.1.9",
->>>>>>> 5d0c3c938b9eb939aac1ed4f14d8101b17f484b8
     "express": "^4.18.2",
     "mongoose": "^8.1.1",
     "nanoid": "3.0.0"
