@@ -5,17 +5,17 @@ async function handleGenerateNewShortURL(req, res) {
   const body = req.body;
   const shortID = nanoid(8);
 
-  if (!body.url) {
+  if (!body.fullUrl) {
     return res.status(400).json({ error: "URL is required" });
   }
 
   await URL.create({
     shortId: shortID,
-    redirectURL: body.url,
+    redirectURL: body.fullUrl,
     visitHistory: [],
   });
 
-  return res.json({ id: shortID });
+  res.redirect("/");
 }
 
 async function handleGetNewShortURL(req, res) {
