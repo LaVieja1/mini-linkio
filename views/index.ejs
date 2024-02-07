@@ -37,7 +37,7 @@
           />
         </div>
         <div class="col-sm-4">
-          <button type="submit" class="btn btn-primary w-100">Recortar</button>
+          <button type="submit" class="btn btn-success w-100 fw-bold fs-5">Recortar</button>
         </div>
       </form>
 
@@ -52,17 +52,16 @@
             </thead>
             <tbody>
             <% shortUrls.forEach(shortUrl => { %>
-            <tr>
+            <tr class="align-middle">
                 <td>
-                <a href="<%= shortUrl.redirectURL %>"
+                <a class="link-light" href="<%= shortUrl.redirectURL %>"
                     ><%= shortUrl.redirectURL %></a
                 </td>
-                <td>
+                <td id="shortLink">
                     <!-- TODO: Add link to shorten URL -->
-                <a href="http://localhost:5000/url/<%= shortUrl.shortId %>"
-                    ><%= shortUrl.shortId %></a
+                    <a class="link-success" href="http://localhost:5000/url/<%= shortUrl.shortId %>"><%= shortUrl.shortId %></a>
                 </td>
-                <td><%= shortUrl.visitHistory.length %></td>
+                <td class="text-success"><%= shortUrl.visitHistory.length %></td>
             </tr>
             <% }) %>
             </tbody>
